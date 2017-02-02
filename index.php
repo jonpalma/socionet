@@ -315,8 +315,9 @@
                     <div class="img-container vertical-align">
                         <img src="img/icons/mail.png" alt="">
                     </div>
-                    <a class="vertical-align" href="mailto:socionetmx@gmail.com">
-                        socionetmx@gmail.com
+                    <a class="vertical-align" href="mailto:roberta@socionet.mx,jesus@socionet.mx">
+                        roberta@socionet.mx,<br>
+                        jesus@socionet.mx
                     </a>
                 </div>
             </div>
@@ -328,6 +329,7 @@
                     <div class="col-sm-6 right-side">
                         <input type="email" class="text" name="email" id="email" placeholder="Correo">
                     </div>
+                        <input type="number" class="text" name="phone" id="phone" placeholder="Teléfono">
                     <textarea name="mssg" id="mssg" cols="30" rows="3" placeholder="Mensaje"></textarea>
                     <input type="hidden" name="bttnContacto">
                     <input type="submit" value="Enviar">

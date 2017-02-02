@@ -69,6 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         $name = strip_tags(trim($_POST["name"]));
         $name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+        $phone = ($_POST["phone"]);
         $message = trim($_POST["mssg"]);
 
         // Check that data was sent to the mailer.
@@ -90,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "socionetmx@gmail.com";
+        $recipient = "roberta@socionet.mx,jesus@socionet.mx";
 
         // Set the email subject.
         $subject = "Contactar a $name";
@@ -98,6 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         // Build the email content.
         $email_content = "Mensaje enviado desde la forma de contacto de Socionet<br><br>";
         $email_content .= "Nombre: $name<br>";
+        $email_content .= "Teléfono: $phone<br><br>";
         $email_content .= "Email: $email<br><br>";
         $email_content .= "Mensaje:<br>$message<br>";
 
