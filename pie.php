@@ -18,7 +18,7 @@
                 <a href="<?php if($page != 'index') { echo 'index.php'; }?>#oficinas-top" class="smoothScroll vertical-align nav-padd">Tamaños de oficinas</a>
                 <a href="<?php if($page != 'index') { echo 'index.php'; }?>#contacto" class="smoothScroll vertical-align nav-padd">Contacto</a>
                 <div class="logo-container">
-                    <a class="fb" target="_blank" href="https://www.facebook.com/">
+                    <a class="fb" target="_blank" href="https://www.facebook.com/socionetmx/">
                         <img src="img/icons/fb.png" alt="">
                     </a>
                 </div>

@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="description" content="Somos una empresa que rentas espacios de oficinas privadas y coworking para tu proyecto emprendedor, empresa ya establecida, startup o lo que sea que estés implementando en este momento de tu vida para salir de tu zona de confort y ser alguien exitoso.">
+        <meta name="keywords" content="oficina, coworking, espacios, renta, proyecto, empresa, privada, proyecto, emprendedor, startup">
         <meta name="author" content="Mixen">
         <link rel="shortcut icon" type="img/png" href="img/favicon.ico"/>
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -36,5 +36,8 @@
                         <li><a href="<?php if($page != 'index') { echo 'index.php'; }?>#contacto" class="smoothScroll vertical-align nav-padd">Contacto</a></li>
                     </ul>
                 </div>
+                <p class="telefono hidden-xs">
+                    Tel: (614) 423.0218
+                </p>
             </div>
         </nav>

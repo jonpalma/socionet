@@ -1,9 +1,9 @@
 /*
-Theme Name: SECORP
+Theme Name: Socionet
 Theme URL: http://
 Author: Agencia Mixen
 Author URL: http://mixen.mx/
-Description: Tema para el sitio SECORP.
+Description: Tema para el sitio Socionet.
 Version: 1.0
 Text Domain: Mixen Communication & Web Technology
 */
@@ -140,6 +140,21 @@ a {
     width: 100%;
 }
 
+.navbar .container-fluid p.telefono {
+    position: absolute;
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(0, 50, 100, 1);
+    height: auto;
+    width: auto;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+
 .navbar .container-fluid .navbar-collapse .navbar-nav > li::after {
     position: absolute;
     content: '';
@@ -236,9 +251,9 @@ a {
     display: inline-block;
     font-weight: 700;
     font-size: 24px;
-    color: rgba(121, 121, 121, 1);
+    color: rgba(220, 220, 220, 1);
     padding: 5px;
-    border: 3px solid rgba(121, 121, 121, 1);
+    border: 3px solid rgba(220, 220, 220, 1);
 }
 
 /* NOSOTROS */
@@ -270,6 +285,10 @@ a {
     text-align: center;
 }
 
+.servicios .container .titulo {
+    margin-bottom: 25px;
+}
+
 .servicios .container h1 {
     display: inline-block;
     font-family: 'GravityBold', sans-serif;
@@ -278,6 +297,16 @@ a {
     color: rgba(255, 255, 255, 1);
     padding: 25px;
     border: 3px solid rgba(255, 255, 255, 1);
+}
+
+.servicios .container .col-sm-3 {
+    text-align: left;
+}
+
+.servicios .container ul li {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
 }
 
 
@@ -384,9 +413,7 @@ a {
 
 .oficinas-bottom .container .tab-content .tab-pane .col-sm-8 .carousel .carousel-inner .item .img-container img {
     position: relative;
-    height: 100%;
-    max-height: none;
-    min-height: 100%;
+    width: 100%;
     max-width: none;
     min-width: 100%;
     top: 50%;
@@ -430,6 +457,21 @@ a {
     font-weight: 500;
     font-size: 16px;
     color: rgba(121, 121, 121, 1);
+}
+
+.oficinas-banner {
+    text-align: center;
+}
+
+.oficinas-banner .container h1 {
+    display: inline-block;
+    font-family: 'GravityBold', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+    max-width: 550px;
+    padding: 25px;
+    border: 3px solid rgba(255, 255, 255, 1);
 }
 
 
@@ -519,6 +561,7 @@ a {
     padding: 10px;
     border: 3px solid rgba(0, 50, 100, 1);
     background-color: rgba(255, 255, 255, 1);
+    outline: none!important;
 }
 
 .contacto .container .form-container input[type=submit] {
@@ -757,6 +800,9 @@ footer .footer-rights a:hover {
         font-size: 16px;
         padding: 0;
     }
+    .navbar .container-fluid .navbar-collapse .navbar-nav > li::after {
+        display: none;
+    }
 
 
     /****** INDEX ******/
@@ -790,6 +836,19 @@ footer .footer-rights a:hover {
         font-size: 32px;
         margin: 0px 15px;
     }
+    .servicios .container .titulo {
+        margin-bottom: 35px;
+    }
+    .servicios .container .col-sm-3 {
+        text-align: center;
+        margin-top: -10px;
+    }
+    .servicios .container .col-sm-3 ul {
+        list-style: none;
+    }
+    .servicios .container ul li {
+        font-size: 16px;
+    }
 
     /* OFICINAS */
     .oficinas-top .container {
@@ -818,6 +877,9 @@ footer .footer-rights a:hover {
     .oficinas-bottom .container {
         padding: 50px 10px;
     }
+    .oficinas-bottom .container h3 {
+        font-size: 18px;
+    }
     .oficinas-bottom .container .tab-content,
     .oficinas-bottom .container .tab-content .tab-pane,
     .oficinas-bottom .container .tab-content .tab-pane .col-sm-4,
@@ -831,7 +893,7 @@ footer .footer-rights a:hover {
     }
     .oficinas-bottom .container .tab-content .tab-pane .col-sm-8 .carousel-indicators {
         position: relative;
-        margin-top: 10px;
+        bottom: 25px;
     }
     .oficinas-bottom .container .tab-content .tab-pane .col-sm-4 {
         text-align: center;
@@ -841,6 +903,9 @@ footer .footer-rights a:hover {
     }
     .oficinas-bottom .container .tab-content .tab-pane .col-sm-4 p {
         font-size: 16px;
+    }
+    .oficinas-banner .container h1 {
+        font-size: 20px;
     }
 
     /* CONTACTO */
